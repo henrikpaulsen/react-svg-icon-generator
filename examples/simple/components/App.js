@@ -1,26 +1,26 @@
 /* eslint-disable no-alert */
-import React, { Component } from 'react';
+import React from 'react';
 import Icon from './Icon';
 
-export default class App extends Component {
-  render() {
+function App() {
     return (
-      <div>
-        Simple possible usage
-        <Icon kind='clock' />
+        <div>
+            <span>Simple possible usage</span>
+            <Icon kind="clock" />
 
-        Setup color and bounding width and height
-        <Icon kind='close' color='#748' width={200} height={100} />
+            <span>Setup color and bounding width and height</span>
+            <Icon kind="close" color="#748" width={200} height={100} />
 
-        Setup color and bounding width and height to size (square)
-        <Icon kind='close' color='red' size={300} />
+            <span>Setup color and bounding width and height to size (square)</span>
+            <Icon kind="close" color="red" size={300} />
 
-        Setup onClick behavior
-        <Icon kind='close' onClick={() => alert('clicked on icon')} />
+            <span>Setup onClick behavior</span>
+            <Icon kind="close" onClick={() => alert('clicked on icon')} />
 
-        Show all icons with description (for finding right icon)
-        <Icon preview />
-      </div>
+            <span>Show all icons with description (for finding right icon)</span>
+            <Icon preview />
+        </div>
     );
-  }
 }
+
+export default App;

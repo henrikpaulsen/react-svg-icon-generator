@@ -1,15 +1,12 @@
 {
-  "name": "react-svg-icon-generator",
-  "version": "0.3.4",
+  "name": "react-svg-icon-generator-fork",
+  "version": "1.0.0",
   "description": "Generate React Icon Component from SVG icons to show, resize and recolor them.",
   "main": "lib/index.js",
-  "bin": {
-    "svg-icon-generate": "bin/svg-icon-generate.js"
-  },
   "scripts": {
     "clean": "rimraf lib",
     "build": "babel src --out-dir lib",
-    "lint": "eslint src test examples",
+    "lint": "eslint src test examples --fix",
     "test": "mocha",
     "prepublish": "npm run clean && npm run build"
   },
@@ -39,14 +36,18 @@
     "babel-preset-stage-2": "^6.24.1",
     "cross-env": "^5.0.5",
     "escope": "^3.3.0",
-    "eslint": "^4.6",
-    "eslint-config-airbnb": "15.1.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
-    "eslint-plugin-react": "^7.3.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "15.0.2",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
     "expect": "^21.0.2",
+    "express": "^4.15.4",
     "gulp": ">=3",
     "mocha": "^3.5.2",
+    "prop-types": "^15.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
     "rimraf": "^2.3.4",
     "webpack": "^3.5.6",
     "webpack-dev-server": "^2.7.1"
@@ -57,5 +58,11 @@
     "nunjucks": "^3.0.1",
     "svgo": "^0.7.2",
     "yargs": "^8.0.2"
+  },
+  "peerDependency": {
+    "gulp": ">=3",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "prop-types": "^15.0.0"
   }
 }

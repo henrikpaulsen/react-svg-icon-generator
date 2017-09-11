@@ -1,3 +1,3 @@
 if (typeof document === 'undefined') {
-  global.document = {};
+    global.document = {};
 }

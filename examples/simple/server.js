@@ -1,18 +1,6 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('./webpack.config');
+const express = require('express');
+const app = express();
 
-new WebpackDevServer(webpack(config), {
-  publicPath: config.output.publicPath,
-  hot: true,
-  historyApiFallback: true,
-  stats: {
-    colors: true
-  }
-}).listen(3000, 'localhost', function (err) {
-  if (err) {
-    console.log(err);
-  }
+app.use(express.static('.'));
 
-  console.log('Listening at localhost:3000');
-});
+app.listen(3000, () => console.log('Started on port 3000'));
