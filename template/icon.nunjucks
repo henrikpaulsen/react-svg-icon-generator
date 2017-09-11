@@ -88,7 +88,7 @@ export default class {{componentName}} extends Component {
   }
 
   getIcon(kind) {
-    const {height, {{ 'color, ' if useColorProp }}onClick, size, style, width} = this.props;
+    const {height, {{ 'color, ' if useColorProp }}onClick, size, style, width, ...props} = this.props;
 
     switch (kind) {
       default: return null;

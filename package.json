@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf lib",
     "build": "babel src --out-dir lib",
-    "lint": "eslint src test examples --fix",
+    "lint": "eslint src test",
     "test": "mocha",
     "prepublish": "npm run clean && npm run build"
   },
