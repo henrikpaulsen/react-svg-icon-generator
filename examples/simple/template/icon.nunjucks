@@ -1,19 +1,20 @@
 // {{comment}}
 // super duper
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 export default class Icon extends Component {
 
   static propTypes = {
-    color: React.PropTypes.string,
-    kind: React.PropTypes.oneOf([
+    color: PropTypes.string,
+    kind: PropTypes.oneOf([
       {%- for icon in icons %}
       '{{icon.name}}',
       {%- endfor %}
     ]).isRequired,
-    size: React.PropTypes.number,
-    height: React.PropTypes.number,
-    width: React.PropTypes.number,
+    size: PropTypes.number,
+    height: PropTypes.number,
+    width: PropTypes.number,
   };
 
   static defaultPropTypes = {

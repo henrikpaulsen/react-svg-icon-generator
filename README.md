@@ -1,10 +1,8 @@
-# React SVG Icon Generator [![Dependency Status](https://dependencyci.com/github/blueberryapps/react-svg-icon-generator/badge)](https://dependencyci.com/github/blueberryapps/react-svg-icon-generator)
+# **NB** THIS IS A FORK FROM [BlueberryApps](https://github.com/blueberryapps/react-svg-icon-generator)
+
+# React SVG Icon Generator
 
 Generate React Icon Component from SVG icons to show, resize and recolor them.
-
-We have prepared live demo for you at [React SVG Icon Live Generator](https://react-svg-icon-live-generator.herokuapp.com)
-
-📱Supports React Native 💕
 
 ## Fastest way to get your svg converted to React Component
 
@@ -17,9 +15,9 @@ for detailed options run just `yarn react-svg-icon-generator`
 
 ## Preview of Generated Component
 
-![Preview](https://raw.githubusercontent.com/blueberryapps/react-svg-icon-generator/master/examples/previews.png)
+![Preview](https://raw.githubusercontent.com/nutgaard/react-svg-icon-generator/master/examples/previews.png)
 
-[source directory with SVG](https://github.com/blueberryapps/react-svg-icon-generator/tree/master/examples/simple/icons) and [this is output component from gulp task](https://github.com/blueberryapps/react-svg-icon-generator/blob/master/examples/simple/components/Icon.js) so in production you are without any dependencies at all.
+[source directory with SVG](https://github.com/nutgaard/react-svg-icon-generator/tree/master/examples/simple/icons) and [this is output component from gulp task](https://github.com/nutgaard/react-svg-icon-generator/blob/master/examples/simple/components/Icon.js) so in production you are without any dependencies at all.
 
 ## Instalation
 
@@ -128,7 +126,7 @@ export default class App extends Component {
 ## Development
 
 ```bash
-git clone git@github.com:blueberryapps/react-svg-icon-generator.git
+git clone git@github.com:nutgaard/react-svg-icon-generator.git
 cd react-svg-icon
 npm i
 npm link
