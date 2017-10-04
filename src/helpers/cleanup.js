@@ -21,7 +21,7 @@ export function cleanupName(name) {
 export function cleanupSvg(svg, keepFillColor) {
     const cleanedSvg = basicCleanup(svg)
         // eslint-disable-next-line max-len
-        .replace(/viewBox/, '{...props} focusable={false} height={height || size} width={width || size} onClick={onClick} style={style} viewBox');
+        .replace(/viewBox/, '{...props} focusable="false" height={height || size} width={width || size} onClick={onClick} style={style} viewBox');
 
     return keepFillColor
         ? cleanedSvg
